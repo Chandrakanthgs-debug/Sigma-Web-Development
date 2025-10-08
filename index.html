@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Html document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <!--The heading tag which is used to add the adding-->
     <h1>This is the h1 heading tag to add the adding in the web</h1>
     <h2>This is the h2 heading tag to add the adding in the web</h2>
@@ -14,23 +14,120 @@
     <h4>This is the h4 heading tag to add the adding in the web</h4>
     <h5>This is the h5 heading tag to add the adding in the web</h5>
     <h6>This is the h6 heading tag to add the adding in the web</h6>
-    <br>
+    <br />
+    <hr>
     <!--Paragraph tag is used to add a paragraph-->
 
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, ex omnis quam accusamus libero necessitatibus labore aspernatur voluptatum repellendus nostrum, explicabo blanditiis voluptates magni pariatur inventore laboriosam eligendi nemo quaerat?</p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, ex omnis
+      quam accusamus libero necessitatibus labore aspernatur voluptatum
+      repellendus nostrum, explicabo blanditiis voluptates magni pariatur
+      inventore laboriosam eligendi nemo quaerat?
+    </p>
+
+    <hr>
     <!-- attribute is used to anhance the functionality of the tag-->
 
     <!-- anchar tag is used to add the links in the website-->
-     <a href="https://www.google.com">Open Google</a>
-     <br>
-     <!-- There are two types of link  one is absolute  which contains the other website links and relative contains the links which are present in the same or different folders -->
+    <a href="https://www.google.com">Open Google</a>
+    <br />
+    <!-- There are two types of link  one is absolute  which contains the other website links and relative contains the links which are present in the same or different folders -->
 
-     <a target="_blank" href="https://www.facebook.com">Open facebook</a>
-     <br>
-     <a target="_blank" href="/Bookmark.html">Open Bookmark</a>
+    <a target="_blank" href="https://www.facebook.com">Open facebook</a>
+    <br />
+    <a target="_blank" href="/Bookmark.html">Open Bookmark</a>
+
+    <br />
+    <hr>
+
+    <!-- image tag :- It is used to add the images from the diffrernt sources -->
+
+    <img src="IMG_20240225_232122.jpg" alt="self photo" />
+
+    <hr >
+
+    <!-- table tag is used to add the data in the table formate -->
+
+    <table>
+      <thead>
+        <caption>
+          <h2>Student Information</h2>
+        </caption>
+      </thead>
+      <tbody>
+        <tr>
+          <th>Name</th>
+          <th>Designation</th>
+          <th>Fav program</th>
+        </tr>
+
+        <tr>
+          <td>Chandrakanth G S</td>
+          <td>Developer</td>
+          <td>Python</td>
+        </tr>
+        <tr>
+          <td>Kalpesh kumar</td>
+          <td>Designer</td>
+          <td>Java</td>
+        </tr>
+      </tbody>
+
+      <tfoot>
+        <tr>
+          <td>Chirag Dinesh Hegde</td>
+          <td>Development</td>
+          <td>Java script</td>
+        </tr>
+      </tfoot>
+    </table>
+
+<!--colspan and rowspan attribute-->
+
+<table>
+    <tr>
+        <th>name</th>
+        <th>Designation</th>
+    </tr>
+    <tr>
+      <td colspan="2">Chandrakanth</td>
+      <td rowspan="2">Developer</td>
+    </tr>
+    <tr>
+      <td>Kalpesh kumar</td>
+      <td>Designer</td>
+    </tr>
+</table>
+
+<hr>
 
 
-    
+<!-- HTML LIST :- ordered , unordered , definition lists -->
+
+<ul type = "square">
+  <li>Chandrakanth</li>
+  <li>Kalpesh</li>
+  <li>chirag</li>
+  <li>chinmay</li>
+</ul>
+
+<ol type="i">
+  <li>Chandrakanth</li>
+  <li>Kalpesh</li>
+  <li>chirag</li>
+  <li>chinmay</li>
+</ol>
+
+<dl>
+  <dt>HTML</dt>
+  <dd>Hyper text markup language</dd>
+  <dt>CSS</dt>
+  <dd>Cascading style stylesheet</dd>
+  <dt>Java</dt>
+  <dd>Progrmaing language</dd>
+</dl>
+
+<hr>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
