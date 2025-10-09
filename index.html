@@ -3,7 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="This is the page contains the complete Information about the HTML">
+    <meta
+      name="description"
+      content="This is the page contains the complete Information about the HTML"
+    />
     <title>Html document</title>
     <link rel="stylesheet" href="style.css" />
   </head>
@@ -16,7 +19,7 @@
     <h5>This is the h5 heading tag to add the adding in the web</h5>
     <h6>This is the h6 heading tag to add the adding in the web</h6>
     <br />
-    <hr>
+    <hr />
     <!--Paragraph tag is used to add a paragraph-->
 
     <p>
@@ -26,26 +29,25 @@
       inventore laboriosam eligendi nemo quaerat?
     </p>
 
-    <hr>
+    <hr />
     <!-- attribute is used to anhance the functionality of the tag-->
+    <div>
+      <!-- anchar tag is used to add the links in the website-->
+      <a href="https://www.google.com">Open Google</a>
+      <br />
+      <!-- There are two types of link  one is absolute  which contains the other website links and relative contains the links which are present in the same or different folders -->
 
-    <!-- anchar tag is used to add the links in the website-->
-    <a href="https://www.google.com">Open Google</a>
-    <br />
-    <!-- There are two types of link  one is absolute  which contains the other website links and relative contains the links which are present in the same or different folders -->
-
-    <a target="_blank" href="https://www.facebook.com">Open facebook</a>
-    <br />
-    <a target="_blank" href="/Bookmark.html">Open Bookmark</a>
-
-    <br />
-    <hr>
+      <a target="_blank" href="https://www.facebook.com">Open facebook</a>
+      <br />
+      <a target="_blank" href="/Bookmark.html">Open Bookmark</a>
+    </div>
+    <hr />
 
     <!-- image tag :- It is used to add the images from the diffrernt sources -->
 
     <img src="IMG_20240225_232122.jpg" alt="self photo" />
 
-    <hr >
+    <hr />
 
     <!-- table tag is used to add the data in the table formate -->
 
@@ -83,52 +85,116 @@
       </tfoot>
     </table>
 
-<!--colspan and rowspan attribute-->
+    <!--colspan and rowspan attribute-->
 
-<table>
-    <tr>
+    <table>
+      <tr>
         <th>name</th>
         <th>Designation</th>
-    </tr>
-    <tr>
-      <td colspan="2">Chandrakanth</td>
-      <td rowspan="2">Developer</td>
-    </tr>
-    <tr>
-      <td>Kalpesh kumar</td>
-      <td>Designer</td>
-    </tr>
-</table>
+      </tr>
+      <tr>
+        <td colspan="2">Chandrakanth</td>
+        <td rowspan="2">Developer</td>
+      </tr>
+      <tr>
+        <td>Kalpesh kumar</td>
+        <td>Designer</td>
+      </tr>
+    </table>
 
-<hr>
+    <hr />
 
+    <!-- HTML LIST :- ordered , unordered , definition lists -->
 
-<!-- HTML LIST :- ordered , unordered , definition lists -->
+    <ul type="square">
+      <li>Chandrakanth</li>
+      <li>Kalpesh</li>
+      <li>chirag</li>
+      <li>chinmay</li>
+    </ul>
 
-<ul type = "square">
-  <li>Chandrakanth</li>
-  <li>Kalpesh</li>
-  <li>chirag</li>
-  <li>chinmay</li>
-</ul>
+    <ol type="i">
+      <li>Chandrakanth</li>
+      <li>Kalpesh</li>
+      <li>chirag</li>
+      <li>chinmay</li>
+    </ol>
 
-<ol type="i">
-  <li>Chandrakanth</li>
-  <li>Kalpesh</li>
-  <li>chirag</li>
-  <li>chinmay</li>
-</ol>
+    <dl>
+      <dt>HTML</dt>
+      <dd>Hyper text markup language</dd>
+      <dt>CSS</dt>
+      <dd>Cascading style stylesheet</dd>
+      <dt>Java</dt>
+      <dd>Progrmaing language</dd>
+    </dl>
 
-<dl>
-  <dt>HTML</dt>
-  <dd>Hyper text markup language</dd>
-  <dt>CSS</dt>
-  <dd>Cascading style stylesheet</dd>
-  <dt>Java</dt>
-  <dd>Progrmaing language</dd>
-</dl>
+    <hr />
+    <!-- Forms in html  -->
 
-<hr>
+    <form action="/action.php">
+      <div>
+        <label for="username">Enter your name :</label>
+        <input
+          type="text"
+          name="username"
+          id="username"
+          placeholder="Your name"
+        />
+      </div>
+
+      <div>
+        <label for="Male">Select your gender :</label>
+        <input type="radio" id="Male" name="gender" value="Male" />
+        <label for="Male">Male</label>
+        <input type="radio" id="female" name="gender" value="female" />
+        <label for="female">Female</label>
+      
+      </div>
+
+      <div>  
+        <label for="password">Enter your password :</label>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          placeholder="Enter your password"
+        />
+      </div>
+
+      <div>
+        
+        <label for="subject">Select your subject :</label>
+        <input type="checkbox" id="subject1" name="subjects" value="subject1" />
+        <label for="subject1">Maths</label>
+        <input type="checkbox" id="subject2" name="subjects" value="subject2" />
+        <label for="subject2">science</label>
+        <input type="checkbox" id="subject3" name="subjects" value="subject3" />
+        <label for="subject3">Social</label>
+        <input type="checkbox" id="subject4" name="subjects" value="subject4" />
+        <label for="subject4">Kannada</label>
+      </div>
+
+      <!-- textarea tag -->
+       <div>
+        <label for="feedback">Give your feedback :</label>
+        <textarea id="feedback" name="feedback" rows="2" cols="50" placeholder="Enter your coment here..."></textarea>
+       </div>
+
+       <!-- select tag :- used to selet the multiple language -->
+
+       <div>
+        <label for="countrys">select country :</label>
+        <select name="country" id="countrys">
+          <option value="india">india</option>
+          <option value="Sri Lankha">Sri Lankha</option>
+          <option value="USA">USA</option>
+          <option value="South Affria">South Affria</option>
+        </select>
+       </div>
+
+    </form>
+
     <script src="script.js"></script>
   </body>
 </html>
