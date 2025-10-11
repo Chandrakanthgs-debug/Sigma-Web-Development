@@ -149,10 +149,9 @@
         <label for="Male">Male</label>
         <input type="radio" id="female" name="gender" value="female" />
         <label for="female">Female</label>
-      
       </div>
 
-      <div>  
+      <div>
         <label for="password">Enter your password :</label>
         <input
           type="password"
@@ -163,7 +162,6 @@
       </div>
 
       <div>
-        
         <label for="subject">Select your subject :</label>
         <input type="checkbox" id="subject1" name="subjects" value="subject1" />
         <label for="subject1">Maths</label>
@@ -176,14 +174,20 @@
       </div>
 
       <!-- textarea tag -->
-       <div>
+      <div>
         <label for="feedback">Give your feedback :</label>
-        <textarea id="feedback" name="feedback" rows="2" cols="50" placeholder="Enter your coment here..."></textarea>
-       </div>
+        <textarea
+          id="feedback"
+          name="feedback"
+          rows="2"
+          cols="50"
+          placeholder="Enter your coment here..."
+        ></textarea>
+      </div>
 
-       <!-- select tag :- used to selet the multiple language -->
+      <!-- select tag :- used to selet the multiple language -->
 
-       <div>
+      <div>
         <label for="countrys">select country :</label>
         <select name="country" id="countrys">
           <option value="india">india</option>
@@ -191,9 +195,65 @@
           <option value="USA">USA</option>
           <option value="South Affria">South Affria</option>
         </select>
-       </div>
+      </div>
+      <hr />
 
+      
     </form>
+    <!-- inline and block element -->
+
+      <p id="block1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      </p>
+
+      <span id="inline1">Iam Inline element</span>
+      <a href="https;//www.google.com">Google</a>
+
+      <div id="block2" class="red">Iam Block element</div>
+      <div class="red">Iam Block element</div>
+      <a href="https://www.facebook.com">facebook</a>
+
+      <!-- id is a unique identifier and A single class can be add to multiple element and single element can contain multiple classes -->
+
+      <hr />
+
+      <!-- video , audio and media (svg and iframe) tags -->
+      <div>
+        <video
+          src="sagar.mp4"
+          controls
+          height="200"
+          width="200"
+          autoplay
+          poster="photo.jpg"
+        ></video>
+
+        <audio src="">audio</audio>
+
+        <svg height="100" width="100">
+          <circle
+            cx="50"
+            cy="50"
+            r="40"
+            stroke="black"
+            stroke-width="3"
+            fill="red"
+          ></circle>
+        </svg>
+
+        <img src="img.svg" alt="cirlce img" />
+      </div>
+      <div>
+        <iframe
+          src="https://www.wikipedia.org/"
+          width="500"
+          height="300"
+        ></iframe>
+      </div>
+      <div>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/uk3RFYY8zhs?si=XvcGPOcxpo72F1g6&amp;start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+
 
     <script src="script.js"></script>
   </body>
