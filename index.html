@@ -132,7 +132,7 @@
     <hr />
     <!-- Forms in html  -->
 
-    <form action="/action.php">
+    <form action="/action.php" method="">
       <div>
         <label for="username">Enter your name :</label>
         <input
@@ -197,63 +197,110 @@
         </select>
       </div>
       <hr />
-
-      
     </form>
     <!-- inline and block element -->
 
-      <p id="block1">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-      </p>
+    <p id="block1">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
 
-      <span id="inline1">Iam Inline element</span>
-      <a href="https;//www.google.com">Google</a>
+    <span id="inline1">Iam Inline element</span>
+    <a href="https;//www.google.com">Google</a>
 
-      <div id="block2" class="red">Iam Block element</div>
-      <div class="red">Iam Block element</div>
-      <a href="https://www.facebook.com">facebook</a>
+    <div id="block2" class="red">Iam Block element</div>
+    <div class="red">Iam Block element</div>
+    <a href="https://www.facebook.com">facebook</a>
 
-      <!-- id is a unique identifier and A single class can be add to multiple element and single element can contain multiple classes -->
+    <!-- id is a unique identifier and A single class can be add to multiple element and single element can contain multiple classes -->
 
-      <hr />
+    <hr />
 
-      <!-- video , audio and media (svg and iframe) tags -->
-      <div>
-        <video
-          src="sagar.mp4"
-          controls
-          height="200"
-          width="200"
-          autoplay
-          poster="photo.jpg"
-        ></video>
+    <!-- video , audio and media (svg and iframe) tags -->
+    <div>
+      <video
+        src="sagar.mp4"
+        controls
+        height="200"
+        width="200"
+        autoplay
+        poster="photo.jpg"
+      ></video>
 
-        <audio src="">audio</audio>
+      <audio src="">audio</audio>
 
-        <svg height="100" width="100">
-          <circle
-            cx="50"
-            cy="50"
-            r="40"
-            stroke="black"
-            stroke-width="3"
-            fill="red"
-          ></circle>
-        </svg>
+      <svg height="100" width="100">
+        <circle
+          cx="50"
+          cy="50"
+          r="40"
+          stroke="black"
+          stroke-width="3"
+          fill="red"
+        ></circle>
+      </svg>
 
-        <img src="img.svg" alt="cirlce img" />
-      </div>
-      <div>
-        <iframe
-          src="https://www.wikipedia.org/"
-          width="500"
-          height="300"
-        ></iframe>
-      </div>
-      <div>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/uk3RFYY8zhs?si=XvcGPOcxpo72F1g6&amp;start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-      </div>
+      <img src="img.svg" alt="cirlce img" />
+    </div>
+    <div>
+      <iframe
+        src="https://www.wikipedia.org/"
+        width="500"
+        height="300"
+      ></iframe>
+    </div>
+    <div>
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/uk3RFYY8zhs?si=XvcGPOcxpo72F1g6&amp;start=1"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen
+      ></iframe>
+    </div>
 
+    <!-- semantic tags are used to make our html file even more formate so that the SEO can even hunderstand better  -->
+
+    <!-- some semantic tags are - header, main (section , aside , article) , footer -->
+
+    <header>
+      <nav>
+        <ul>
+          <li>HOME</li>
+          <li>ABOUT</li>
+          <li>CONTACT</li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section>It is the one part of the main</section>
+      <section>It is the another part of the main</section>
+    </main>
+    <footer>copy write content : &nbsp; &copy;</footer>
+
+    <!-- HTML entities are the used to represent the spacial character  -->
+
+    &lt;p&gt; &lt;/p&gt;
+
+    <p>copy right symbols : &nbsp; &nbsp; &copy;</p>
+
+    <!-- HTML code tag -->
+
+    <code>
+      <pre>
+      &lt;!DOCTYPE html&gt;
+      &lt;html lang="en"&gt;
+      &lt;head&gt;
+        &lt;meta charset="UTF-8"&gt;
+        &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+        &lt;title>Document&lt;/title&gt;
+      &lt;/head&gt;
+      &lt;body&gt;
+        
+      &lt;/body &gt;
+      &lt;/html &gt;
+      </pre>
+    </code>
 
     <script src="script.js"></script>
   </body>
