@@ -1,3 +1,16 @@
+/* In three ways we can add the css to html 
+ 1. inline css :- using the style attribute inside the element itself
+ 2. internal css :- where here we using a style tag inside a head tag
+ 3. external css :- in which style will be added in .css file */
+
+ /*  selectors in css :- there are 4 types of selector 
+ 1. universal selector (*)
+ 2. element selector ( p , h1 , div ...)
+ 3. id selector (#)
+ 4. class selector (.)*/
+
+
+
 #block1{
     background-color: aqua;
 }
