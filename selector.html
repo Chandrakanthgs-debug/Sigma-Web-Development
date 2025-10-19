@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>selectors</title>
+
+    <style>
+      .c1 {
+        color: rgb(35, 255, 255);
+        background-color: rgb(110, 218, 110);
+      }
+
+      #b1 {
+        color: aliceblue;
+        background-color: aqua;
+      }
+
+      .c1 {
+        padding: 25px;
+      }
+
+      div > p {
+        background-color: yellow;
+      }
+
+      div p{
+        background-color: aquamarine;
+      }
+
+      #pseudo:active{
+         color: yellow;
+      }
+
+      #h2:hover{
+        background-color: aqua;
+        color: aquamarine;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- In css differrent types of selectors are there  -->
+
+    <div class="c1">
+      Iam block element
+      <p>Iam paragraph--</p>
+    </div>
+    <div id="b1">
+      Iam another block element
+      <p>
+        <a href="https://www.google.com">Google</a>
+      </p>
+    </div>
+
+    <div class="c2">
+      Iam block element
+      <p>Iam paragraph--</p>
+    </div>
+    <div id="b2">
+      Iam another block element
+      <span>
+        <p>
+          <a href="https://www.google.com">Google</a>
+        </p>
+      </span>
+    </div>
+    <div >
+        <h1 id="pseudo">pseudo selector</h1>
+        <a id="h2" href="https://www.google.com">Google</a>
+    </div>
+  </body>
+</html>
