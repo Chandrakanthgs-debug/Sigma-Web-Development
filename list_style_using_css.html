@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>list style using css</title>
+    <style>
+
+        .list{
+            
+            background-color: aqua;
+
+            
+        }
+
+        .ulist{
+            /* list-style-image: url(image.png) ; */
+            display: flex;
+            padding: 30px;
+            list-style: none;
+            background-color: greenyellow;
+        }
+
+        .ulist1{
+            display: flex;
+            padding: 30px;
+            list-style: none;
+            background-color: aqua;
+        }
+
+        .ulist li{
+            padding-left: 100px;
+            background-color: aqua;
+
+            list-style-position: inside;
+        }
+
+        .ulist1 li{
+            padding-left: 100px;
+            background-color: yellowgreen;
+            list-style-position: inside;
+        }
+
+    </style>
+  </head>
+  <body>
+    <nav class="list">
+      <ul class="ulist">
+        <li>Home</li>
+        <li>About</li>
+        <li>Contact</li>
+      </ul>
+    </nav>
+    <nav class="list1">
+      <ul class="ulist1">
+        <li>Home</li>
+        <li>About</li>
+        <li>Contact</li>
+      </ul>
+    </nav>
+  </body>
+</html>

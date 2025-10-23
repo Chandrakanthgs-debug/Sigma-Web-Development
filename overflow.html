@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>overflow in CSS</title>
+
+    <style>
+        .box{
+            border: 2px solid black;
+            width: 20vw;
+            height: 20vh;
+            overflow:auto;
+
+           
+        }
+
+        .box1{
+            border: 2px solid black;
+            margin: 20px;
+            width: 20vw;
+            height: 20vh;
+            /* overflow-x: scroll;
+            overflow-y: hidden; */
+            overflow: hidden scroll;
+        }
+         .box2{
+            border: 2px solid black;
+            margin: 20px;
+            width: 20vw;
+            height: 20vh;
+
+            overflow: scroll;
+            white-space: nowrap;
+            text-overflow: clip;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- some times the content will get overflow if it is more then the box size -->
+     <div class="box">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi sunt placeat, molestiae accusantium aut voluptates ab quibusdam porro tempora laborum architecto eligendi temporibus sed repudiandae impedit perferendis praesentium eos. A?</p>
+     </div>
+
+     <div class="box1">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi sunt placeat, molestiae accusantium aut voluptates ab quibusdam porro tempora laborum architecto eligendi temporibus sed repudiandae impedit perferendis praesentium eos. A?</p>
+     </div>
+
+     <div class="box2">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi sunt placeat, molestiae accusantium aut voluptates ab quibusdam porro tempora laborum architecto eligendi temporibus sed repudiandae impedit perferendis praesentium eos. A?</p>
+     </div>
+    
+</body>
+</html>
