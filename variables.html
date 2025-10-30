@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css variables</title>
+    <style>
+        :root{
+            --color : rgb(19, 166, 211);
+            --seccolor: rgba(255, 0, 0, 0.581);
+
+            --defpad: 10px;
+
+            /* --defop: 0.9; */
+        }
+
+        *{
+            margin: 0;
+            padding: 0;
+
+        }
+
+        body{
+            background-color: aqua;
+            margin: 20px 10px 0px 10px;
+        }
+
+        .boxes{
+            background-color: var(--color);
+            border: 2px solid black;
+            margin: 10px 0px 10px 10px;
+            
+        }
+
+        .lists {
+            display: flex;
+            list-style: none;
+
+            
+        }
+
+        .lists li{
+            --color : gray;
+            background-color: var(--color);
+            padding-left: 50px;
+
+            background-color: var(--defop, gray);
+        }
+
+        .content{
+            border: 2px solid black;
+            margin: 10px 0px 50px 10px;
+            background-color: var(--seccolor);
+        }
+
+        .box{
+            border: 2px solid black;
+            margin: 20px;
+            width: 244px;
+            height: 344px;
+        }
+
+        .media{
+            display: flex;
+        }
+
+        @media only screen and (max-width : 450px){
+            body{
+                background-color: blanchedalmond;
+            }
+            .media{
+                flex-direction: column;
+            }
+        }
+
+        @media screen and (orientation: landscape) {
+            body{
+                border: 2px solid purple;
+            }
+            
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <!-- CSS VARIABLES AND MIDEA QUERIES -->
+    <div class="boxes">
+        <ul class="lists">
+            <li>Home</li>
+            <li>About</li>
+            <li>content</li>
+        </ul>
+    </div>
+
+    <div class="content">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, earum? Nihil provident ut repudiandae necessitatibus eaque, culpa quidem in harum reiciendis voluptate officia, impedit doloremque!</p>
+    </div>
+
+
+    <hr>
+
+    <div class="media">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+
+    
+</body>
+</html>

@@ -9,8 +9,21 @@
       * {
         margin: 0;
         padding: 0;
+      }
+      body {
+        background-color: gray;
+        
+      }
+      .card{
+        display: flex;
+      }
 
-        background-color: rgba(0, 0, 0, 0.31);
+      @media only screen and (max-width:450px) {
+
+        .card{
+          flex-direction: column;
+        }
+        
       }
       .parent {
         background-color: white;
@@ -19,7 +32,6 @@
         margin: 50px;
         width: 300px;
         height: 450px;
-        
       }
 
       .img {
@@ -32,17 +44,9 @@
       }
 
       #span1 {
-        border: 1px solid rgba(0, 0, 0, 0.31);
-        padding: 5px;
-        margin: 20px;
-        border-radius: 15px;
-      }
-
-      
-      #span1 {
         background-color: white;
         border: 2px solid rgba(0, 0, 0, 0.31);
-        padding: 2px;
+        padding: 0px 6px;
         margin-right: 0px;
         margin-left: 20px;
         border-radius: 15px;
@@ -50,14 +54,12 @@
       #span2 {
         background-color: white;
         border: 2px solid rgba(0, 0, 0, 0.31);
-        padding: 2px;
+        padding: 0px 6px;
         margin-left: 10px;
         border-radius: 15px;
-
-
       }
 
-      #lago{
+      #lago {
         background-color: white;
         margin-top: 15px;
         font-family: Arial, Helvetica, sans-serif;
@@ -66,14 +68,14 @@
         margin-left: 20px;
       }
 
-      p{
+      p {
         background-color: white;
-        margin-top: 15px ;
+        margin-top: 15px;
         margin-left: 20px;
         font-weight: lighter;
       }
 
-      #button{
+      #button {
         height: 40px;
         width: 100px;
         border: 0px;
@@ -86,18 +88,55 @@
     </style>
   </head>
   <body>
-    <div class="parent">
-      <div class="img">
-        
+    <div class="card">
+      <div class="parent">
+        <div class="img"></div>
+
+        <span id="span1">Nature</span>
+        <span id="span2">Lake</span>
+
+        <h2 id="lago">Lago di Braies</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint
+          cupiditate a dolor fuga reiciendis optio distinctio dignissimos
+          ratione nisi! Odit qui perspiciatis architecto harum consequuntur
+          facere laborum animi doloribus dignissimos.
+        </p>
+
+        <button id="button">Read More</button>
       </div>
+      <div class="parent">
+        <div class="img"></div>
 
-      <span id="span1">Nature</span>
-      <span id="span2">Lake</span>
+        <span id="span1">Nature</span>
+        <span id="span2">Lake</span>
 
-      <h2 id="lago">Lago di Braies</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint cupiditate a dolor fuga reiciendis optio distinctio dignissimos ratione nisi! Odit qui perspiciatis architecto harum consequuntur facere laborum animi doloribus dignissimos.</p>
+        <h2 id="lago">Lago di Braies</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint
+          cupiditate a dolor fuga reiciendis optio distinctio dignissimos
+          ratione nisi! Odit qui perspiciatis architecto harum consequuntur
+          facere laborum animi doloribus dignissimos.
+        </p>
 
-      <button id="button">Read More</button> 
+        <button id="button">Read More</button>
+      </div>
+      <div class="parent">
+        <div class="img"></div>
+
+        <span id="span1">Nature</span>
+        <span id="span2">Lake</span>
+
+        <h2 id="lago">Lago di Braies</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint
+          cupiditate a dolor fuga reiciendis optio distinctio dignissimos
+          ratione nisi! Odit qui perspiciatis architecto harum consequuntur
+          facere laborum animi doloribus dignissimos.
+        </p>
+
+        <button id="button">Read More</button>
+      </div>
     </div>
   </body>
 </html>
